@@ -1,6 +1,6 @@
 import React from "react";
 import { makeStyles } from "@mui/styles";
-import { Box, Typography, Button, TextField } from "@mui/material";
+import { Box, Typography, Button } from "@mui/material";
 import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
 
 const useStyles = makeStyles({
@@ -12,21 +12,22 @@ const useStyles = makeStyles({
     backgroundRepeat: "no-repeat",
     backgroundSize: "cover",
     backgroundPosition: "center",
-  },
-  container: {
-    width: "80%",
-    margin: "auto",
+    backgroundColor: '#0000008f',
+    backgroundBlendMode: 'multiply',
+    position:'relative',
   },
   row: {
     width: "100%",
-    float: "left",
     clear: "both",
-    position: "relative",
-    left: 0,
-    top: "160px",
+    position:'absolute',
+    bottom:'150px',
+    right:'0',
+    padding: '0 20rem',
+    
   },
-  col: {
+  col:{
     textAlign: "initial",
+    display: 'block',
     "& span": {
       background: "#0e3055",
       color: "#fff",
@@ -34,33 +35,47 @@ const useStyles = makeStyles({
       textTransform: "uppercase",
       fontSize: "10px",
     },
-    "& h2": {
+    "& h1": {
       color: "#fff",
       fontSize: "4rem",
       fontWeight: "600",
       textTransform: "capitalize",
+      marginBottom: '15px',
     },
   },
-  content: {
-    "& Button": {
-      background: "none",
-      border: "none",
-    },
+  content:{
+    display:'flex',
+    alignItems:'baseline',
+    textAlign:'initial',
+    // width: '50%',
+    color: '#fff',
+    "& p":{
+      fontSize:'11px',
+    }
   },
-  col1:{
-    background:' #6ec1e485',
-    display: 'flex',
-    "& div":{
-        width:'50%'
+  btn:{
+    width:'20%',
+    "& span":{
+        color:' #fff',
+        padding: '5px 10px',
+        fontSize: '17px',
+        background: 'none',
+        textTransform: 'uppercase',
+        fontWeight: 700,
+        display: 'flex',
+        alignItems: 'center',
+        gap: '9px',
     }
   }
+   
+  
 });
 
 const Banner = () => {
   const classes = useStyles();
   return (
     <Box className={classes.Banner}>
-      <Box className={classes.container}>
+      <Box className="container">
         <Box className={classes.row}>
           <Box className={classes.col}>
             <span>plastic surgery</span>
@@ -68,10 +83,10 @@ const Banner = () => {
               this is the <br></br>best clinic
             </Typography>
             <Box className={classes.content}>
-              <Box>
-                <Button variant="text">
+              <Box className={classes.btn}>
+                <span>
                   shope <ArrowForwardIosIcon />
-                </Button>
+                </span>
               </Box>
               <Typography>
                 Lorem Ipsum is simply dummy text of the printing and typesetting
@@ -81,38 +96,6 @@ const Banner = () => {
               </Typography>
             </Box>
           </Box>
-          <Box className={classes.col1}>
-            <Box>
-              <Typography>Get in Touch</Typography>
-              <Typography>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
-                non nunc eros. Suspendisse scelerisque felis.
-              </Typography>
-            </Box>
-            <Box>
-            <Box
-              component="form"
-              sx={{
-                "& > :not(style)": { m: 1, width: "25ch" },
-              }}
-              noValidate
-              autoComplete="off"
-            >
-              <TextField
-                id="outlined-basic"
-                label="Outlined"
-                variant="outlined"
-              />
-              <TextField id="filled-basic" label="Filled" variant="filled" />
-              <TextField
-                id="standard-basic"
-                label="Standard"
-                variant="standard"
-              />
-            </Box>
-          </Box>
-          </Box>
-         
         </Box>
       </Box>
     </Box>

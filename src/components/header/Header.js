@@ -15,6 +15,7 @@ const useStyles = makeStyles({
     left: 0,
     top: 0,
     padding: '2rem 0',
+    zIndex:'999'
   },
   container: {
     width: "89%",
@@ -31,9 +32,6 @@ const useStyles = makeStyles({
     justifyContent: "space-between",
     gap:'30px',
     color: '#fff',
-  },
-  Navbar: {
-    display: "flex",
   },
   Navbar: {
     width: "80%",
