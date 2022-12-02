@@ -42,6 +42,7 @@ const useStyles = makeStyles({
       fontWeight: "normal",
       lineHeight: "2em",
       letterSpacing: "1px",
+      padding: '0 68px',
     },
   },
   drec: {
@@ -62,8 +63,10 @@ const useStyles = makeStyles({
   },
   fromdiv: {
     width: "47.583%",
+    paddingRight: '52px',
     "& div": {
       display: "flex",
+      width:'100%',
       gap: "30px",
       marginBottom: "15px",
       "& button":{

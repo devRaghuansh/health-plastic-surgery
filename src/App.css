@@ -10,6 +10,10 @@ box-sizing: border-box;
   width: 89%;
   margin: auto;
 }
+img{
+  width: 100%;
+  display: block;
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;
