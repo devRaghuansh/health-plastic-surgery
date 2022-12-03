@@ -1,5 +1,6 @@
 import { Box, Link, Typography } from "@mui/material";
 import { makeStyles } from "@mui/styles";
+
 import React from "react";
 
 const usestyles = makeStyles({
@@ -7,7 +8,12 @@ const usestyles = makeStyles({
     width: "100%",
     float: "left",
     clear: "both",
-    marginBottom: '90px',
+    background:'url(./img/pr-32.jpg)',
+    backgroundRepeat:'no-repeat',
+    backgroundSize:'Cover',
+    marginTop: '-151px',
+    padding: '220px 0px 120px 0px',
+
   },
   row: {
     width: "100%",
