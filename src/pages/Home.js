@@ -5,6 +5,7 @@ import Contect from '../components/home/contect/Contect'
 import Demo from '../components/home/demo/Demo'
 import Transformations from '../components/home/transformation/Transformations'
 import Image from '../components/home/imgas/Image'
+import Doctors from '../components/home/doctors/Doctors'
 
 const Home = () => {
   return (
@@ -15,6 +16,7 @@ const Home = () => {
       <Demo/>
       <Transformations/>
       <Image/>
+      <Doctors/>
     </div>
   )
 }

@@ -119,13 +119,7 @@ const Contect = () => {
           <Box className={classes.fromdiv}>
             <Box
               component="form"
-              className={classes.from}
-              // sx={{
-              //   "& > :not(style)": { m: 1, width: "25ch" },
-              // }}
-              // noValidate
-              // autoComplete="off"
-            >
+              className={classes.from} >
               <Box>
                 <TextField
                   id="standard-basic"
