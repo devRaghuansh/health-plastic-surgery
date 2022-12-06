@@ -8,24 +8,14 @@ const usestyles = makeStyles({
     width: "100%",
     float: "left",
     clear: "both",
-    background:'url(./img/pr-32.jpg)',
-    backgroundRepeat:'no-repeat',
-    backgroundSize:'Cover',
-    marginTop: '-151px',
-    padding: '220px 0px 120px 0px',
-position:'relative',
+    backgroundRepeat: "no-repeat",
+    backgroundSize: "Cover",
+    marginTop: "-151px",
+    padding: "220px 0px 120px 0px",
+    background:"url(./img/pr-32.jpg),linear-gradient(180deg, #FFFFFF 0%, #FFFFFFBF 100%)",
+    backgroundBlendMode: "color",
   },
-  background: {
-    // backgroundColor: "transparent",
-    // backgroundImage: "linear-gradient(-90deg, #0E3055 0%, #2E2E2E24 100%)",
-    // opacity: "1",
-    // transition: "background 0.3s, border-radius 0.3s, opacity 0.3s",
-    height: "100%",
-    width: "100%",
-    top: "0",
-    left: "0",
-    position: "absolute",
-  },
+ 
   row: {
     width: "100%",
     clear: "both",
@@ -44,30 +34,30 @@ position:'relative',
   },
   sign: {
     display: "flex",
-    width:'50%',
-    justifyContent: 'center',
-    padding: '8px',
-    "& img":{
-        width:'200px',
-    }
+    width: "50%",
+    justifyContent: "center",
+    padding: "8px",
+    "& img": {
+      width: "200px",
+    },
   },
   dr: {
     display: "flex",
-    marginTop: '29px',
+    marginTop: "29px",
   },
   dr1: {
     display: "flex",
-    width:'50%',
+    width: "50%",
     "& >div": {
       marginRight: "27px",
-      "& p":{
-        color: '#2E2E2E',
-    fontFamily: "DM Sans, Sans-serif",
-    fontSize: '16px',
-    fontWeight: 'bold',
-    lineHeight: '2em',
-    letterSpacing: '1px',
-      }
+      "& p": {
+        color: "#2E2E2E",
+        fontFamily: "DM Sans, Sans-serif",
+        fontSize: "16px",
+        fontWeight: "bold",
+        lineHeight: "2em",
+        letterSpacing: "1px",
+      },
     },
   },
   col1: {
@@ -117,7 +107,6 @@ const About = () => {
   const classes = usestyles();
   return (
     <Box className={classes.About}>
-      <Box className={classes.background}></Box>
       <Box className="container">
         <Box className={classes.row}>
           <Box className={classes.col1}>

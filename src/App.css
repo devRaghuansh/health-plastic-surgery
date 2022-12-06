@@ -6,14 +6,7 @@ padding: 0%;
 margin: 0%;
 box-sizing: border-box;
 }
-.container{
-  width: 89%;
-  margin: auto;
-}
-img{
-  width: 100%;
-  display: block;
-}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -47,4 +40,20 @@ img{
   to {
     transform: rotate(360deg);
   }
+}
+
+
+/* css */
+.container{
+  width: 89%;
+  margin: auto;
+}
+img{
+  width: 100%;
+  display: block;
+}
+row{
+  width: 100%;
+  float:left;
+  clear: both;
 }
