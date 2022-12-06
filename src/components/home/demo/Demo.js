@@ -19,6 +19,7 @@ const usestyles = makeStyles({
     backgroundRepeat: "no-repeat",
     backgroundSize: "Cover",
     padding:' 84px 0',
+    position:'relative',
     "& h5": {
       fontSize: "20px",
       fontWeight: "bold",
@@ -27,6 +28,17 @@ const usestyles = makeStyles({
       color: "#2e2e2e",
       letterSpacing: "1px",
     },
+  },
+  background: {
+    backgroundColor: "transparent",
+    backgroundImage: "linear-gradient(180deg, #FFFFFF 0%, #FFFFFFBF 100%)",
+    opacity: "1",
+    transition: "background 0.3s, border-radius 0.3s, opacity 0.3s",
+    height: "100%",
+    width: "100%",
+    top: "0",
+    left: "0",
+    position: "absolute",
   },
   row: {
     "& p": {
@@ -44,11 +56,12 @@ const Demo = () => {
   const classes = usestyles();
   return (
     <Box className={classes.demo}>
+      <Box className={classes.background}></Box>
       <Box className="container">
         <Box className={classes.row}>
-          <Grid container spacing={2}>
+          <Grid container spacing={4}>
             <Grid item xs={3}>
-              <Card sx={{ maxWidth: 345 }}>
+              <Card  >
                 <CardActionArea>
                   <CardMedia
                     component="img"
@@ -69,7 +82,7 @@ const Demo = () => {
               </Card>
             </Grid>
             <Grid item xs={3}>
-              <Card sx={{ maxWidth: 345 }}>
+              <Card >
                 <CardActionArea>
                   <CardMedia
                     component="img"
@@ -90,7 +103,7 @@ const Demo = () => {
               </Card>
             </Grid>
             <Grid item xs={3}>
-              <Card sx={{ maxWidth: 345 }}>
+              <Card >
                 <CardActionArea>
                   <CardMedia
                     component="img"

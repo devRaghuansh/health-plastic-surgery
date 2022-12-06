@@ -13,7 +13,18 @@ const usestyles = makeStyles({
     backgroundSize:'Cover',
     marginTop: '-151px',
     padding: '220px 0px 120px 0px',
-
+position:'relative',
+  },
+  background: {
+    // backgroundColor: "transparent",
+    // backgroundImage: "linear-gradient(-90deg, #0E3055 0%, #2E2E2E24 100%)",
+    // opacity: "1",
+    // transition: "background 0.3s, border-radius 0.3s, opacity 0.3s",
+    height: "100%",
+    width: "100%",
+    top: "0",
+    left: "0",
+    position: "absolute",
   },
   row: {
     width: "100%",
@@ -106,6 +117,7 @@ const About = () => {
   const classes = usestyles();
   return (
     <Box className={classes.About}>
+      <Box className={classes.background}></Box>
       <Box className="container">
         <Box className={classes.row}>
           <Box className={classes.col1}>
