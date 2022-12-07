@@ -6,6 +6,7 @@ import Demo from '../components/home/demo/Demo'
 import Transformations from '../components/home/transformation/Transformations'
 import Image from '../components/home/imgas/Image'
 import Doctors from '../components/home/doctors/Doctors'
+import Time from '../components/home/time/Time'
 
 const Home = () => {
   return (
@@ -17,6 +18,7 @@ const Home = () => {
       <Transformations/>
       <Image/>
       <Doctors/>
+      <Time/>
     </div>
   )
 }
