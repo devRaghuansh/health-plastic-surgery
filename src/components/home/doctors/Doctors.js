@@ -1,6 +1,13 @@
 import { Box, Typography } from "@mui/material";
 import { makeStyles } from "@mui/styles";
 import React from "react";
+import CountUp from "react-countup";
+
+const data = [
+  { name: "STAFF", nam: 23 },
+  { name: "DOCTORS", nam: 56 },
+  { name: "VISITS", nam: 46 },
+];
 
 const usestyles = makeStyles({
   doctors: {
@@ -11,7 +18,7 @@ const usestyles = makeStyles({
     backgroundSize: "100% auto",
     padding: "105px 0px 40px 0px",
     background:
-      "url(./img/pr-32.jpg),linear-gradient(180deg, #FFFFFF 0%, #FFFFFFBF 100%)",
+      "url(./img/pr-32.jpg),linear-gradient(180deg, #FFFFFF -100%, #FFFFFFBF 100%)",
     backgroundBlendMode: "color",
     borderTop: "1px solid #F1F1F1",
   },
@@ -34,6 +41,8 @@ const usestyles = makeStyles({
       fontWeight: "normal",
       lineHeight: "1em",
       letterSpacing: "1px",
+    marginTop: '20px',
+
     },
   },
   col_b: {
@@ -41,6 +50,7 @@ const usestyles = makeStyles({
     backgroundImage:
       "linear-gradient(to right, #65BDC2 -48%, #c3c6cd 55%, #0E3055 101%)",
     alignItems: "center",
+    marginTop: '50px',
   },
   Lipoflex: {
     display: "flex",
@@ -114,10 +124,10 @@ const usestyles = makeStyles({
   parse: {
     width: "100%",
     float: "left",
-    background: "#fff",
-    marginBottom:'20px',
+    background: "#eeeeee",
+    marginBottom: "20px",
     borderRadius: "2px",
-
+    overflow: "hidden",
     "&>div": {
       width: "80%",
       display: "flex",
@@ -127,16 +137,17 @@ const usestyles = makeStyles({
       fontSize: "11px",
       height: "30px",
       lineHeight: "30px",
-      alignItems: 'center',
-      padding: '0 12px',
+      alignItems: "center",
+      padding: "0 12px",
     },
   },
   parse1: {
     width: "100%",
     float: "left",
-    background: "#fff",
-    marginBottom:'15px',
+    background: "#eeeeee",
+    marginBottom: "15px",
     borderRadius: "2px",
+    overflow: "hidden",
     "&>div": {
       width: "90%",
       display: "flex",
@@ -146,9 +157,30 @@ const usestyles = makeStyles({
       fontSize: "11px",
       height: "30px",
       lineHeight: "30px",
-      alignItems: 'center',
-      padding: '0 12px',
+      alignItems: "center",
+      padding: "0 12px",
     },
+  },
+  count: {
+    display: "flex",
+    width: "100%",
+    float: "left",
+    justifyContent: "space-around",
+    fontFamily: "'DM sans', sans-serif",
+    marginTop:'20px',
+    "& span": {
+        color: "#FFFFFF",
+        fontSize: "30px",
+        lineHeight: "1em",
+        fontWeight: 600,
+      },
+      "& p": {
+        color: "#FFFFFF",
+        fontSize: "14px",
+        lineHeight: "2.5",
+        fontWeight: 400,
+        letterSpacing: '4px',
+      },
   },
 });
 
@@ -213,7 +245,7 @@ const Doctors = () => {
             </Box>
             <Box className={classes.c}>
               <Typography variant="h2">At Your Service</Typography>
-              <Typography style={{marginBottom: '30px',}}>
+              <Typography style={{ marginBottom: "30px" }}>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit quisque
               </Typography>
               <Box className={classes.parse}>
@@ -227,6 +259,14 @@ const Doctors = () => {
                   <Typography>Breast Augmentation</Typography>
                   <Typography>90%</Typography>
                 </Box>
+              </Box>
+              <Box className={classes.count}>
+                {data.map((item, i) => (
+                  <Box key={i}>
+                    <CountUp end={item.nam} />
+                    <Typography>{item.name}</Typography>
+                  </Box>
+                ))}
               </Box>
             </Box>
           </Box>
