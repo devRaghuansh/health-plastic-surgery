@@ -7,6 +7,7 @@ import Transformations from '../components/home/transformation/Transformations'
 import Image from '../components/home/imgas/Image'
 import Doctors from '../components/home/doctors/Doctors'
 import Time from '../components/home/time/Time'
+import Product from '../components/home/product/Product'
 
 const Home = () => {
   return (
@@ -19,6 +20,7 @@ const Home = () => {
       <Image/>
       <Doctors/>
       <Time/>
+      <Product/>
     </div>
   )
 }

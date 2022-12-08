@@ -1,6 +1,6 @@
 import React from "react";
 import { makeStyles } from "@mui/styles";
-import { Box, Typography, Button } from "@mui/material";
+import { Box, Typography } from "@mui/material";
 import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
 
 const useStyles = makeStyles({
@@ -45,12 +45,13 @@ const useStyles = makeStyles({
   },
   content:{
     display:'flex',
-    alignItems:'baseline',
+    alignItems:'center',
     textAlign:'initial',
     // width: '50%',
     color: '#fff',
     "& p":{
       fontSize:'11px',
+      width:'65%'
     }
   },
   btn:{

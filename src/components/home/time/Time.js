@@ -19,7 +19,7 @@ const usestyles = makeStyles({
     width: "100%",
     clear: "both",
     display: "flex",
-    alignItems: 'center',
+    alignItems: "center",
     "& >div": {
       width: "50%",
     },
@@ -27,11 +27,11 @@ const usestyles = makeStyles({
   call1: {
     color: " #fff",
     textAlign: "initial",
-    "&>p":{
-        marginBottom: '20px',
-        fontSize: '14px',
-    lineHeight: '2em',
-    letterSpacing: '1px',
+    "&>p": {
+      marginBottom: "20px",
+      fontSize: "14px",
+      lineHeight: "2em",
+      letterSpacing: "1px",
     },
     "& span": {
       backgroundColor: "#65BDC2",
@@ -80,34 +80,33 @@ const usestyles = makeStyles({
           letterSpacing: "4px",
         },
       },
-      "& p":{
-        letterSpacing:' 4px',
-    fontSize: '14px',
-    fontFamily: "'DM Sans', sans-serif",
-
-      }
+      "& p": {
+        letterSpacing: " 4px",
+        fontSize: "14px",
+        fontFamily: "'DM Sans', sans-serif",
+      },
     },
   },
-  namber:{
+  namber: {
     background: "url(./img/bg-3.jpg), #65BDC2",
-    backgroundPosition: 'bottom center',
-    backgroundSize: 'cover',
-    marginTop: '-85px',
-    marginBottom: '0px',
-    padding: '20px 24px 20px 0px',
-    backgroundBlendMode:'multiply',
-    textAlign:'end',
-    "&>p":{
-        color: '#FFFFFF',
-        fontWeight: 'bold',
-        letterSpacing: '2.9px',
-        fontSize: '30px',
-    }
+    backgroundPosition: "bottom center",
+    backgroundSize: "cover",
+    marginTop: "-85px",
+    marginBottom: "0px",
+    padding: "20px 24px 20px 0px",
+    backgroundBlendMode: "multiply",
+    textAlign: "end",
+    "&>p": {
+      color: "#FFFFFF",
+      fontWeight: "bold",
+      letterSpacing: "2.9px",
+      fontSize: "30px",
+    },
   },
-  clc:{
-    padding: '0px 0px 0px 80px',
-    width:'100%',
-  }
+  clc: {
+    padding: "0px 0px 0px 80px",
+    width: "100%",
+  },
 });
 
 const Time = () => {
@@ -160,12 +159,12 @@ const Time = () => {
               </Box>
             </Box>
             <Box className={classes.namber}>
-                <Typography>+1 561 842 6141</Typography>
+              <Typography>+1 561 842 6141</Typography>
             </Box>
           </Box>
           <Box>
             <Box className={classes.clc}>
-            <img src="./img/Capture.PNG" alt="a" />
+              <img src="./img/Capture.PNG" alt="a" />
             </Box>
           </Box>
         </Box>
