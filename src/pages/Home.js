@@ -8,6 +8,7 @@ import Image from '../components/home/imgas/Image'
 import Doctors from '../components/home/doctors/Doctors'
 import Time from '../components/home/time/Time'
 import Product from '../components/home/product/Product'
+import Promotions from '../components/home/promotions/Promotions'
 
 const Home = () => {
   return (
@@ -21,6 +22,7 @@ const Home = () => {
       <Doctors/>
       <Time/>
       <Product/>
+      <Promotions/>
     </div>
   )
 }
