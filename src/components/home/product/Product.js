@@ -11,7 +11,6 @@ const usestyles = makeStyles({
     backgroundPosition: "0px -219px",
     backgroundRepeat: "no-repeat",
     backgroundSize: "100% auto",
-    // padding: "30px 0px 0px 4px",
     backgroundBlendMode: "color",
     padding: '105px 0px 105px 0px',
   },

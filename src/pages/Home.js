@@ -9,6 +9,7 @@ import Doctors from '../components/home/doctors/Doctors'
 import Time from '../components/home/time/Time'
 import Product from '../components/home/product/Product'
 import Promotions from '../components/home/promotions/Promotions'
+import Meida from '../components/home/meida/Meida'
 
 const Home = () => {
   return (
@@ -23,6 +24,7 @@ const Home = () => {
       <Time/>
       <Product/>
       <Promotions/>
+      <Meida/>
     </div>
   )
 }

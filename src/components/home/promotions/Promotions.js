@@ -42,6 +42,7 @@ const usestyles = makeStyles({
         letterSpacing: "4px",
         color: "#fff",
         marginBottom: "20px",
+        display:'inline-block',
       },
       "& h2": {
         fontFamily: "DM Sans, Sans-serif",
@@ -91,6 +92,8 @@ const usestyles = makeStyles({
   col_con:{
     position:'relative',
     display: 'flex',
+    width: '100%',
+    marginBottom: '111px',
   },
   crlimg:{
     width:'288px',
